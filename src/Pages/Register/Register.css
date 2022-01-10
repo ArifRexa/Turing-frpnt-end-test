@@ -1,0 +1,22 @@
+.form-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+    
+}
+
+.form-border{
+    border: 1px solid black;
+    width: 30%;
+    padding: 20px;
+
+}
+
+.input-field{
+    width: 90%;
+    height: 40px;
+    border-radius: 7px;
+}
