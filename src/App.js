@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
@@ -12,6 +11,7 @@ import Footer from "./Pages/Footer/Footer"
 function App() {
   return (
     <div className="">
+{/*************************** Routing Setup is Here **************************/}
 
       <BrowserRouter>
         <Header></Header>

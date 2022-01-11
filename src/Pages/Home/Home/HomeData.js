@@ -9,6 +9,8 @@ const HomeData = (props) => {
 
     return (
         <div>
+            {/*************************** Pages Card Style **************************/}
+
             <Card className="rides-style">
                 <Card.Img variant="top" src={imgThumb} className="img-sizing" />
                 <Card.Body>

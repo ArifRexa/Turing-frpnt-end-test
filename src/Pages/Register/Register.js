@@ -64,6 +64,8 @@ const Register = () => {
     }
     return (
         <div>
+            {/*************************** Register page Setup is Here **************************/}
+
             <div className='form-style '>
                 <div className='form-border'>
                     <form onSubmit={handleSubmit}>

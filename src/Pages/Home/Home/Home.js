@@ -18,6 +18,9 @@ const Home = () => {
     }, [])
     return (
         <div>
+
+            {/*************************** EXTRA ADD **************************/}
+
             <h1 className='text-center my-5'>WELCOME TO OUR WORLD</h1>
             <Carousel>
                 <Carousel.Item>
