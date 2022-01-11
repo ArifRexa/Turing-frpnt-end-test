@@ -7,6 +7,7 @@ const Register = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [loginData, setLoginData] = useState({});
+    const [isRegister, setIsRegister] = useState(false)
 
     const handleEmail = e => {
         setEmail(e.target.value)
@@ -31,7 +32,11 @@ const Register = () => {
     }
 
     const handleSubmit = (e) => {
-        if (loginData.password !== loginData.password2) {
+        if (password.length < 3) {
+            alert("Your Password should be three digits");
+            return
+        }
+        else if(loginData.password !== loginData.password2){
             alert("Your Password did not matched. Try again");
             return
         }
@@ -51,16 +56,10 @@ const Register = () => {
             
         }
         else{
-
             localStorage.setItem(email, JSON.stringify(users))
             alert("Sign Up Successfully")
-            
-            
-            
+            setIsRegister(true)
         }
-
-        console.log(users);
-        <Navigate to="/login" />
         e.preventDefault()
     }
     return (
@@ -89,6 +88,9 @@ const Register = () => {
                     <p>Already registered?</p>
                     <Link to="/login"> <button type="submit" >SIGN IN</button>  </Link>
                 </div>
+                {
+                    isRegister && <Navigate to="/login" />
+                }
             </div>
         </div>
     );

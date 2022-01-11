@@ -1,6 +1,6 @@
 import React from 'react';
 import  { Navbar, Container, Nav } from 'react-bootstrap'
-import { Link, Navigate, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = (props) => {
     const isLogin = props.isLogin
