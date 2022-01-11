@@ -20,3 +20,11 @@
     height: 40px;
     border-radius: 7px;
 }
+
+.btn-sign{
+    background-color: rgba(101, 199, 238, 0.986);
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+}

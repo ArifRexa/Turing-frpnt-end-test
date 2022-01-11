@@ -81,12 +81,12 @@ const Register = () => {
                         <label for="password2">Confirm Password:</label><br />
                         <input className='input-field' type="password" name="password2" onChange={handleOnChange} onBlur={handlePassword} placeholder='Confirm Password' required/><br />
 
-                        <input type="submit" value="SIGN UP" />
+                        <input className='btn-sign' type="submit" value="SIGN UP" />
                         
                     </form>
                     <hr />
                     <p>Already registered?</p>
-                    <Link to="/login"> <button type="submit" >SIGN IN</button>  </Link>
+                    <Link to="/login"> <button type="submit" className='btn-sign' >SIGN IN</button>  </Link>
                 </div>
                 {
                     isRegister && <Navigate to="/login" />

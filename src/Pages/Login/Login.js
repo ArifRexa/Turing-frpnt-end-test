@@ -66,7 +66,7 @@ const Login = () => {
             
         }
         else{
-            alert("This email has not any account. Please sign up.")
+            alert("This email is not registered. Please sign up.")
             return
 
         }
@@ -77,7 +77,7 @@ const Login = () => {
 
     return (
         <div>
-            This is login page
+            
             <div className='form-style '>
                 <div className='form-border'>
                     <form onSubmit={handleSubmit}>
@@ -91,13 +91,14 @@ const Login = () => {
                         <input className='input-field' type="password" name="password" onChange={handleOnChange} onBlur={handlePassword} placeholder='Enter Your Password'/><br />
 
 
-                        <input  type="submit" value="SIGN IN" />
+                        <input className='btn-sign'  type="submit" value="SIGN IN" />
 
                     </form>
                     <hr />
                     <p>New User?</p>
-                    <Link to="/register"> <button type="submit" >SIGN UP</button>  </Link>
+                    <Link to="/register"> <button type="submit" className='btn-sign'>SIGN UP</button>  </Link>
                 </div>
+                
                 {
                     isLogin && <Navigate to="/dashboard"></Navigate>
                 }
